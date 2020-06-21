@@ -39,6 +39,7 @@ function addProduct() {
   priceField.val(newProduct.price.toString());
 
   newProduct.view = pv;
+  scrollTo(0, document.body.scrollHeight);
 }
 
 function highlightCheapest() {
