@@ -17,11 +17,29 @@
   font-size: large;
 }
 
-.text-right-xl{
+.text-right-xl {
   font-size: x-large;
   text-align: right;
 }
 
-.highlighted{
+.highlighted {
   background-color: lightpink;
+}
+
+@keyframes added {
+  from {
+    background-color: lightskyblue;
+  }
+
+  to {
+    background-color: white;
+  }
+}
+
+.product-item {
+  animation-name: added;
+  animation-duration: .75s;
+  animation-timing-function: linear;
+  background-color: white;
+  opacity: 1;
 }
