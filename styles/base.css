@@ -6,12 +6,29 @@ body {
   color: #3c3c3c;
 }
 
-.box-shadow {
-  box-shadow: 0px 4px 4px #9f9f9f;
+h2 {
+  border-bottom: 3px solid #9f9f9f;
+  margin-bottom: 0;
+}
+
+.box-shadow-bottom {
+  box-shadow: 0 4px 4px #9f9f9f;
+}
+
+.box-shadow-both {
+  box-shadow: 0 4px 4px #9f9f9f, 0 -1px 4px #9f9f9f;
+}
+
+.rounded-box {
+  border-radius: 4px;
 }
 
 .container {
   padding: 0.75rem 1rem;
+}
+
+.container-box {
+  margin: 1em;
 }
 
 .content {
