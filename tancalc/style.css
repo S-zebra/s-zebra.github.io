@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+  font-weight: 400;
+}
+
 .pad-top {
   height: 4rem;
 }
