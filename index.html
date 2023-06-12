@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8" />
@@ -17,25 +17,52 @@
 </head>
 
 <body>
-  <div class="sticky">
-    <header class="container header fixed">
-      <h1 class="no-margin">S-zebra(ちゃんしま)'s top page</h1>
-    </header>
-    <nav class="container navbar fixed box-shadow-bottom">
-      <ul class="horizontial-list no-margin">
-        <li><a href="#works">Works</a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </nav>
+  <header class="pad-sm fixed box-shadow-bottom">
+    <h1 class="no-margin">My works</h1>
+  </header>
+  <nav class="pad-sm fixed">
+    <ul class="horizontial-list no-margin">
+      <li><a href="#">Home</a></li>
+    </ul>
+  </nav>
+  <div class="content-spacer">
   </div>
-  <div class="container container-box rounded-box content box-shadow-both">
-    <h2 class="header" id="works">Works</h2>
-    <div class="container">
-      <h3><a href="tancalc/index.html">たんかるく / Tancalc</a></h3>
-      <p>複数商品の単価を入力することで、単価をわかりやすく比べることができるWebアプリです。</p>
+  <div class="pad-sm margin-1 shaded-card">
+    <h2 class="" id="works">アプリなど成果物 / Works</h2>
+    <div class="pad-sm">
+      <div class="app-item">
+        <h3>
+          <a href="tancalc/index.html">
+            <img src="img/tancalc-logo.png" alt="tancalc-icon">
+            たんかるく / Tancalc
+          </a>
+        </h3>
+        <p>複数商品の単価を入力することで、単価をわかりやすく比べることができるWebアプリです。</p>
+      </div>
+      <div class="app-item">
+        <h3>
+          <a href="foo/index.html">
+            <img src="img/foo-logo.png" alt="foo-icon">
+            foo
+          </a>
+        </h3>
+        <p>プロジェクトにおいて作成した、スマートフォン向けSNSです。<br>
+          ある特定の地点に投稿を行い、それを別のユーザーが「持ち運ぶ」ことでつながる、というコンセプトのサービスです。</p>
+      </div>
+      <div class="app-item">
+        <h3>
+          <a href="ledmusicvisualizer/index.html">
+            <img src="img/ledmusicvisualizer-logo.png" alt="ledmusicvisualizer-icon">
+            LED Music Visualizer
+          </a>
+        </h3>
+        <p>神奈川県ITコンテスト2018に出品した作品です。<br>
+          Chrome アプリと連動して、16個のLEDが音楽に合わせてカラフルに光ります。パラメータ調整機能付きです。
+        </p>
+      </div>
     </div>
   </div>
+
 </body>
 
 </html>

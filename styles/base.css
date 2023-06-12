@@ -1,9 +1,13 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Yu Gothic",
-    sans-serif;
+  font-family: "Segoe UI", "Meiryo", "BlinkMacSystemFont", -apple-system, sans-serif;
+  background-color: white;
   margin: 0;
   padding: 0;
   color: #3c3c3c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-block: 0;
 }
 
 h2 {
@@ -11,28 +15,29 @@ h2 {
   margin-bottom: 0;
 }
 
+.app-item > h3 {
+  display: inline-block;
+}
+
 .box-shadow-bottom {
   box-shadow: 0 4px 4px #9f9f9f;
 }
 
-.box-shadow-both {
+.shaded-card {
   box-shadow: 0 4px 4px #9f9f9f, 0 -1px 4px #9f9f9f;
-}
-
-.rounded-box {
   border-radius: 4px;
 }
 
-.container {
-  padding: 0.75rem 1rem;
+.pad-sm {
+  padding: 0.75em;
 }
 
-.container-box {
+.margin-1 {
   margin: 1em;
 }
 
-.content {
-  margin-top: 7rem;
+.content-spacer {
+  margin-top: 7em;
 }
 
 .no-margin {
@@ -43,24 +48,62 @@ h2 {
   position: fixed;
   background-color: #fafafa;
   width: 100%;
-  position: fixed;
 }
 
-.header {
+header {
   top: 0;
+  opacity: 0.9;
 }
 
-.navbar {
+nav {
   padding: 0;
   top: 4em;
-  text-align: center;
 }
 
-.horizontial-list li {
+ul {
+  padding-inline-start: 0;
+}
+
+ul.horizontial-list li {
   display: inline-block;
-  padding: 0.75rem;
 }
 
-nav ul li.selected {
-  border-bottom: 4px darkorange solid;
+ul.horizontial-list li:not(:last-child)::after {
+  content: ">";
+  margin-left: .5em;
+}
+
+.container-box div p {
+  border-bottom: 1px lightgrey solid;
+}
+
+.app-item {
+  padding-top: .5em;
+  border-top: 1px lightgray solid;
+  border-bottom: 1px lightgray solid;
+}
+
+.app-item a > img {
+  display: block;
+  height: 64px;
+  width: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #3c3c3c;
+    color: #9f9f9f;
+  }
+
+  .fixed {
+    background-color: #7f7f7f;
+    color: #dadada;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
 }
