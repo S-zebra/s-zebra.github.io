@@ -1,16 +1,17 @@
 @charset "utf-8";
 
 body {
+  font-family: Arial, Meiryo, sans-serif;
   font-weight: 400;
 }
 
 .pad-top {
-  height: 4rem;
+  height: 4em;
 }
 
 .btn {
   font-size: 120%;
-  padding: 0.6rem;
+  padding: 0.6em;
 }
 
 .noshow {
@@ -30,6 +31,11 @@ body {
   background-color: lightpink;
 }
 
+li {
+  list-style: none;
+}
+
+/* Animation is not supported on IE9 or older. */
 @keyframes added {
   from {
     background-color: lightskyblue;
@@ -42,7 +48,7 @@ body {
 
 .product-item {
   animation-name: added;
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   animation-timing-function: linear;
   opacity: 1;
 }
