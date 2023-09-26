@@ -6,7 +6,7 @@ body {
 }
 
 .pad-top {
-  height: 4em;
+  height: 5em;
 }
 
 .btn {
@@ -19,7 +19,7 @@ body {
 }
 
 .text-lg {
-  font-size: large;
+  font-size: 16pt;
 }
 
 .text-right-xl {
@@ -51,4 +51,5 @@ li {
   animation-duration: 0.75s;
   animation-timing-function: linear;
   opacity: 1;
+  border-bottom: 1px grey solid;
 }

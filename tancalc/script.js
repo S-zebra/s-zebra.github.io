@@ -64,10 +64,13 @@ function highlightCheapest() {
       return p.unitPrice();
     })
   );
+
   products.forEach(function (p) {
     if (p.unitPrice() == minUnitPrice) {
       p.view.addClass("highlighted");
       p.view.querySelector("#cheapestLabel").removeClass("noshow");
+      document.getElementById("resultMessage").innerText =
+        p.price + "円の商品がお得です。";
     } else {
       p.view.removeClass("highlighted");
       p.view.querySelector("#cheapestLabel").addClass("noshow");
