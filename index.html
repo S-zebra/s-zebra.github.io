@@ -1,9 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-
-<head>
-  <meta charset="UTF-8" />
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
@@ -11,58 +10,78 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script> -->
-  <link rel="stylesheet" href="styles/base.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>S-zebra&apos;s top page</title>
-</head>
+    <link rel="stylesheet" href="styles/base.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>S-zebra&apos;s top page</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HZL7P8STJ2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
-  <header class="pad-sm fixed box-shadow-bottom">
-    <h1 class="no-margin">My works</h1>
-  </header>
-  <nav class="pad-sm fixed">
-    <ul class="horizontial-list no-margin">
-      <li><a href="#">Home</a></li>
-    </ul>
-  </nav>
-  <div class="content-spacer">
-  </div>
-  <div class="pad-sm margin-1 shaded-card">
-    <h2 class="" id="works">アプリなど成果物 / Works</h2>
-    <div class="pad-sm">
-      <div class="app-item">
-        <h3>
-          <a href="tancalc/index.html">
-            <img src="img/tancalc-logo.png" alt="tancalc-icon">
-            たんかるく / Tancalc
-          </a>
-        </h3>
-        <p>複数商品の単価を入力することで、単価をわかりやすく比べることができるWebアプリです。</p>
-      </div>
-      <div class="app-item">
-        <h3>
-          <a href="foo/index.html">
-            <img src="img/foo-logo.png" alt="foo-icon">
-            foo
-          </a>
-        </h3>
-        <p>プロジェクトにおいて作成した、スマートフォン向けSNSです。<br>
-          ある特定の地点に投稿を行い、それを別のユーザーが「持ち運ぶ」ことでつながる、というコンセプトのサービスです。</p>
-      </div>
-      <div class="app-item">
-        <h3>
-          <a href="ledmusicvisualizer/index.html">
-            <img src="img/ledmusicvisualizer-logo.png" alt="ledmusicvisualizer-icon">
-            LED Music Visualizer
-          </a>
-        </h3>
-        <p>神奈川県ITコンテスト2018に出品した作品です。<br>
-          Chrome アプリと連動して、16個のLEDが音楽に合わせてカラフルに光ります。パラメータ調整機能付きです。
-        </p>
+      gtag("config", "G-HZL7P8STJ2");
+    </script>
+  </head>
+
+  <body>
+    <header class="pad-sm fixed box-shadow-bottom">
+      <h1 class="no-margin">My works</h1>
+    </header>
+    <nav class="pad-sm fixed">
+      <ul class="horizontial-list no-margin">
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+    <div class="content-spacer"></div>
+    <div class="pad-sm margin-1 shaded-card">
+      <h2 class="" id="works">アプリなど成果物 / Works</h2>
+      <div class="pad-sm">
+        <div class="app-item">
+          <h3>
+            <a href="tancalc/index.html">
+              <img src="img/tancalc-logo.png" alt="tancalc-icon" />
+              たんかるく / Tancalc
+            </a>
+          </h3>
+          <p>
+            複数商品の単価を入力することで、単価をわかりやすく比べることができるWebアプリです。
+          </p>
+        </div>
+        <div class="app-item">
+          <h3>
+            <a href="foo/index.html">
+              <img src="img/foo-logo.png" alt="foo-icon" />
+              foo
+            </a>
+          </h3>
+          <p>
+            プロジェクトにおいて作成した、スマートフォン向けSNSです。<br />
+            ある特定の地点に投稿を行い、それを別のユーザーが「持ち運ぶ」ことでつながる、というコンセプトのサービスです。
+          </p>
+        </div>
+        <div class="app-item">
+          <h3>
+            <a href="ledmusicvisualizer/index.html">
+              <img
+                src="img/ledmusicvisualizer-logo.png"
+                alt="ledmusicvisualizer-icon"
+              />
+              LED Music Visualizer
+            </a>
+          </h3>
+          <p>
+            神奈川県ITコンテスト2018に出品した作品です。<br />
+            Chrome
+            アプリと連動して、16個のLEDが音楽に合わせてカラフルに光ります。パラメータ調整機能付きです。
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
