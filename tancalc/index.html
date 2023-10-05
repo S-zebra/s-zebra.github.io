@@ -1,75 +1,123 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>たんかるく</title>
+    <link rel="apple-touch-icon" sizes="256x256" href="./img/icon.png" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" sizes="16x16" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
 
-<head>
-  <meta charset="utf-8">
-  <title>たんかるく</title>
-  <link rel="apple-touch-icon" sizes="256x256" href="./img/icon.png">
-  <link rel="icon" type="image/png" href="./img/favicon.png" sizes="16x16">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"
+    ></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HZL7P8STJ2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js">
-  </script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
-</head>
+      gtag("config", "G-HZL7P8STJ2");
+    </script>
+  </head>
 
-<body>
-  <header class="navbar fixed-top navbar-expand-lg navbar-dark white pt-0 pb-0">
-    <div class="h1-responsive">たんかるく</div>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <button class="btn btn-primary" id="addButton">追加</button>
-      </li>
-    </ul>
-  </header>
-  <div class="pad-top"></div>
-  <div>
-    <div class="container" id="productList">
-
-      <div class="md-form row z-depth-1 noshow mb-2 rounded product-item" id="productItemBase">
-        <div class="container pb-2">
-          <div class="mt-4 text-lg font-weight-bold noshow" id="cheapestLabel">最安</div>
-          <!-- 価格行 -->
-          <div class="mt-4 text-lg">価格</div>
-          <div class="md-form input-group input-group pt-0 mt-0">
-            <input type="number" class="form-control" aria-label="unit-price" id="priceField">
-            <div class="input-group-append">
-              <span class="input-group-text md-addon">円</span>
+  <body>
+    <header
+      class="navbar fixed-top navbar-expand-lg navbar-dark white pt-0 pb-0"
+    >
+      <div class="h1-responsive">たんかるく</div>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <button class="btn btn-primary" id="addButton">追加</button>
+        </li>
+      </ul>
+    </header>
+    <div class="pad-top"></div>
+    <div>
+      <div class="container" id="productList">
+        <div
+          class="md-form row z-depth-1 noshow mb-2 rounded product-item"
+          id="productItemBase"
+        >
+          <div class="container pb-2">
+            <div
+              class="mt-4 text-lg font-weight-bold noshow"
+              id="cheapestLabel"
+            >
+              最安
             </div>
-          </div>
+            <!-- 価格行 -->
+            <div class="mt-4 text-lg">価格</div>
+            <div class="md-form input-group input-group pt-0 mt-0">
+              <input
+                type="number"
+                class="form-control"
+                aria-label="unit-price"
+                id="priceField"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text md-addon">円</span>
+              </div>
+            </div>
 
-          <!-- 単位量行 -->
-          <div class="mt-2 text-lg">内容量</div>
-          <div class="md-form input-group input-group pt-0 mt-0">
-            <input type="number" class="form-control" aria-label="unit-amount" id="amountField">
-            <div class="input-group-append">
-              <!-- 
+            <!-- 単位量行 -->
+            <div class="mt-2 text-lg">内容量</div>
+            <div class="md-form input-group input-group pt-0 mt-0">
+              <input
+                type="number"
+                class="form-control"
+                aria-label="unit-amount"
+                id="amountField"
+              />
+              <div class="input-group-append">
+                <!-- 
                 <select class="browser-default custom-select" id="unitNameField">
                 </select> 
               -->
-              <span class="input-group-text md-addon">で</span>
+                <span class="input-group-text md-addon">で</span>
+              </div>
             </div>
-          </div>
 
-          <!-- 単価行 -->
-          <div class="mt-4 text-lg font-weight-bold">1&nbsp;単位量あたり</div>
-          <div class="text-right-xl mt-2 font-weight-bold">
-            <span class="" id="unitPrice">&nbsp;</span>&nbsp;円
+            <!-- 単価行 -->
+            <div class="mt-4 text-lg font-weight-bold">1&nbsp;単位量あたり</div>
+            <div class="text-right-xl mt-2 font-weight-bold">
+              <span class="" id="unitPrice">&nbsp;</span>&nbsp;円
+            </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
